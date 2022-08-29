@@ -28,7 +28,7 @@ const news = () => {
             I built this application in React JS & Bootstrap and it hosted on
             GitHub. This application is for my styling knowledge & for some fun.
             It features some types of food and their prices & ingredients. It
-            also display's my love for pizza.
+            also display&#39;s my love for pizza.
           </p>
           <a href="https://food-app-two-mu.vercel.app/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4">App</button>

@@ -28,7 +28,7 @@ const news = () => {
             I built this application in React JS & CSS5 and it hosted on GitHub.
             This application is for my API knowledge & for some practice of it.
             It features tempreture, wind speed & weather of your city. It cover
-            all the city's from the world.
+            all the city&#39;s from the world.
           </p>
           <a
             href="https://weather-app-react-five-phi.vercel.app/"

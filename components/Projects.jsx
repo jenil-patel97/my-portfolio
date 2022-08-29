@@ -14,7 +14,7 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[black] underline cursor-pointer">
           Projects
         </p>
-        <h2 className="py-4 cursor-default">What I've Built Recent</h2>
+        <h2 className="py-4 cursor-default">What I&#39;ve Built Recent</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Netflix App"
