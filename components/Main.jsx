@@ -21,16 +21,40 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
+              <a
+                href="https://www.linkedin.com/in/jenil-patel-425694214/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaTwitter />
+              <a
+                href="https://twitter.com/jenil97"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaTwitter />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
+              <a
+                href="https://github.com/jenil-patel97"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <a
+                href="https://jenilweb10@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiOutlineMail />
+              </a>
             </div>
           </div>
         </div>

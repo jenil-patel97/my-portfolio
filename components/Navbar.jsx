@@ -3,28 +3,28 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [linkColor, setLinkColor] = useState("#1f2937");
 
   const router = useRouter();
 
-useEffect(() => {
+  useEffect(() => {
     if (
-      router.asPath === '/netflix' ||
-      router.asPath === '/news' ||
-      router.asPath === '/food' ||
-      router.asPath === '/weather'
+      router.asPath === "/netflix" ||
+      router.asPath === "/news" ||
+      router.asPath === "/food" ||
+      router.asPath === "/weather"
     ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
     } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
     }
   }, [router]);
 
@@ -45,7 +45,7 @@ useEffect(() => {
 
   return (
     <div
-    style={{ backgroundColor: `${navBg}` }}
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
@@ -55,6 +55,7 @@ useEffect(() => {
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
         <Link href="/">
           <Image
+            className="cursor-pointer"
             src="/../public/assets/Black-logo.png"
             alt="/"
             width="190"
@@ -180,16 +181,40 @@ useEffect(() => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <a
+                    href="https://www.linkedin.com/in/jenil-patel-425694214/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaTwitter />
+                  <a
+                    href="https://twitter.com/jenil97"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaTwitter />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <a
+                    href="https://github.com/jenil-patel97"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <a
+                    href="https://jenilweb10@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineMail />
+                  </a>
                 </div>
               </div>
             </div>
