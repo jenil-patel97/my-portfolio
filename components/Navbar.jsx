@@ -33,13 +33,13 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
-        <Link href='/'>
-         <Image
-          src="/../public/assets/Black-logo.png"
-          alt="/"
-          width="190"
-          height="50"
-        /> 
+        <Link href="/">
+          <Image
+            src="/../public/assets/Black-logo.png"
+            alt="/"
+            width="190"
+            height="50"
+          />
         </Link>
         <div>
           <ul className="hidden md:flex">
@@ -89,12 +89,15 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/Black-logo.png"
-                width="120"
-                height="35"
-                alt="/"
-              />
+              <Link href="/">
+                <Image
+                  src="/../public/assets/Black-logo.png"
+                  width="120"
+                  height="35"
+                  alt="/"
+                />
+              </Link>
+
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -111,27 +114,42 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul>
               <Link href="/">
-                <li className="py-4 text-sm hover:underline hover:font-bold">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:underline hover:font-bold"
+                >
                   Home
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm hover:underline hover:font-bold">
+              <Link href="/#about">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:underline hover:font-bold"
+                >
                   About
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm hover:underline hover:font-bold">
+              <Link href="/#skills">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:underline hover:font-bold"
+                >
                   Skills
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm hover:underline hover:font-bold">
+              <Link href="/#projects">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:underline hover:font-bold"
+                >
                   Projects
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm hover:underline hover:font-bold">
+              <Link href="/#contact">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:underline hover:font-bold"
+                >
                   Contact
                 </li>
               </Link>
