@@ -25,13 +25,13 @@ const Projects = () => {
           <ProjectItem
             title="News App"
             backgroundImg={newsImg}
-            projectUrl="/newsapp"
+            projectUrl="/news"
             tech="React JS"
           />
           <ProjectItem
             title="Food App"
             backgroundImg={foodImg}
-            projectUrl="/foodapp"
+            projectUrl="/food"
             tech="React JS"
           />
           <ProjectItem
