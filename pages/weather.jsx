@@ -58,7 +58,7 @@ const news = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="font-bold underline cursor-pointer">Back</p>
         </Link>
       </div>
     </div>
