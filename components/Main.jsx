@@ -47,15 +47,11 @@ const Main = () => {
                 <FaGithub />
               </a>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <a
-                href="https://jenilweb10@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <Link href="https://jenilweb10@gmail.com">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
-              </a>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
