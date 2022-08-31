@@ -35,7 +35,9 @@ const weather = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4">App</button>
+            <button className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg py-2 px-8 mt-3 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+              App
+            </button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
@@ -58,7 +60,9 @@ const weather = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="font-bold underline cursor-pointer">Back</p>
+          <button className="cursor-pointer text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg py-2">
+            Back
+          </button>
         </Link>
       </div>
     </div>
