@@ -4,7 +4,7 @@ import React from "react";
 import weatherImg from "../public/assets/projects/weather.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const news = () => {
+const weather = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -65,4 +65,4 @@ const news = () => {
   );
 };
 
-export default news;
+export default weather;

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import newsImg from "../public/assets/projects/News.jpg";
+import bankImg from "../public/assets/projects/bank.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const news = () => {
+const bank = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,11 +13,11 @@ const news = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={newsImg}
+          src={bankImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">News App</h2>
+          <h2 className="py-2">Bank App</h2>
         </div>
       </div>
 
@@ -25,13 +25,13 @@ const news = () => {
         <div className="col-span-4">
           <h2 className="my-4 underline">Overview</h2>
           <p className="text-black">
-            I built this application in React JS and is hosted on GitHub pages.
-            This application is pulling news data from an the News API and
-            displaying different categories. It features Top news and some other
-            featured selection.
+            I built this application in React JS and is hosted on vercel. This
+            application is for reviewing my design work and for practice on my
+            skills. It features some major contents and some other featured
+            selection.
           </p>
           <a
-            href="https://newsapp-lyart-ten.vercel.app/"
+            href="https://my-bank-app.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -46,13 +46,13 @@ const news = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-black py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Bootstrap
+                <RiRadioButtonFill className="pr-1" /> Tailwindcss
               </p>
               <p className="text-black py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
               <p className="text-black py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> News API
+                <RiRadioButtonFill className="pr-1" /> React-dom
               </p>
             </div>
           </div>
@@ -65,4 +65,4 @@ const news = () => {
   );
 };
 
-export default news;
+export default bank;

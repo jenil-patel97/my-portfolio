@@ -4,7 +4,7 @@ import React from "react";
 import foodImg from "../public/assets/projects/food.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const news = () => {
+const food = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -30,7 +30,11 @@ const news = () => {
             It features some types of food and their prices & ingredients. It
             also display&#39;s my love for pizza.
           </p>
-          <a href="https://food-app-two-mu.vercel.app/" target="_blank" rel="noreferrer">
+          <a
+            href="https://food-app-two-mu.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4">App</button>
           </a>
         </div>
@@ -61,4 +65,4 @@ const news = () => {
   );
 };
 
-export default news;
+export default food;

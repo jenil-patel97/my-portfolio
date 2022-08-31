@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import netflixImg from "../public/assets/projects/netflix.jpg";
-import newsImg from "../public/assets/projects/News.jpg";
+import bankImg from "../public/assets/projects/bank.jpg";
 import foodImg from "../public/assets/projects/food.jpg";
 import weatherImg from "../public/assets/projects/weather.jpg";
 import ProjectItem from "./ProjectItem";
@@ -23,9 +23,9 @@ const Projects = () => {
             tech="React JS"
           />
           <ProjectItem
-            title="News App"
-            backgroundImg={newsImg}
-            projectUrl="/news"
+            title="Bank App"
+            backgroundImg={bankImg}
+            projectUrl="/bank"
             tech="React JS"
           />
           <ProjectItem
